@@ -1,0 +1,26 @@
+# Environment files
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Node modules (if frontend included)
+node_modules/
+
+# OS files
+.DS_Store
+
+# Project generated data
+uploads/
+chroma_db/
+
+# IDE / editor files (optional but recommended)
+.vscode/
+.idea/

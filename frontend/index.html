@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Document Q/A System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="app">
+        <section class="container">
+
+            <!-- Header -->
+            <header class="header">
+                <h1>AI Document Q/A System</h1>
+                <p>Upload a PDF and ask questions using RAG</p>
+            </header>
+
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <h2>Upload Document</h2>
+
+                <form id="uploadForm">
+                    <input type="file" id="pdfFile" accept="application/pdf" required />
+                    <button type="submit">Upload & Index</button>
+                </form>
+
+                <p id="uploadStatus" class="status-text"></p>
+            </section>
+
+            <!-- Q/A Section -->
+            <section class="qa-section">
+                <h2>Ask a Question</h2>
+
+                <div id="chatBox" class="chat-box">
+                    <div class="message bot-message">
+                        Upload a PDF first, then ask me questions about it.
+                    </div>
+                </div>
+
+                <form id="questionForm" class="question-form">
+                    <input
+                        type="text"
+                        id="questionInput"
+                        placeholder="Example: What is the main topic of this document?"
+                        autocomplete="off"
+                        required
+                    />
+                    <button type="submit">Ask</button>
+                </form>
+            </section>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
